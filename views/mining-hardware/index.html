@@ -139,163 +139,6 @@
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S5" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-<!--   <script> 
-    $(document).ready(function(){
-        console.log("working")
-        changeUrlBasedOnCountry()
-            // changeUrlBasedOnCountry()
-            // $('.antminers7').attr('<href>')
-    })
-
-
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-          console.log('this data we want to check', data)
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
   
   
 <tr>
@@ -319,163 +162,7 @@ function changeUrlBasedOnCountry() {
     <td class="miner-price">$489.99</td>
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S7" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
-</tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-<!--   <script> 
-    $(document).ready(function(){
-        console.log("working")
-        // changeUrlBasedOnCountry()
-        getRealIp()
-            // changeUrlBasedOnCountry()
-            // $('.antminers7').attr('<href>')
-    })
-
-    function getRealIp() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-          console.log("getrealip function")
-          console.log(data.country)
-          var country = data.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                  $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                  $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                  
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
+</tr>  
   
   
 <tr>
@@ -499,164 +186,7 @@ function changeUrlBasedOnCountry() {
     <td class="miner-price">$3,000</td>
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S9" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
-</tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-<!--   <script> 
-    $(document).ready(function(){
-        console.log("working")
-        // changeUrlBasedOnCountry()
-        getRealIp()
-            // changeUrlBasedOnCountry()
-            // $('.antminers7').attr('<href>')
-    })
-
-    function getRealIp() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-          console.log("getrealip function")
-          console.log(data.country)
-          var country = data.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
+</tr>  
   
 <tr>
 
@@ -680,192 +210,6 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary avalon6" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=bitcoin+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon+bitcoin+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-<!--   <script> 
-    $(document).ready(function(){
-        console.log("working")
-        // changeUrlBasedOnCountry()
-        getRealIp()
-            // changeUrlBasedOnCountry()
-            // $('.antminers7').attr('<href>')
-    })
-
-    function getRealIp() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-          console.log("getrealip function")
-          console.log(data.country)
-          var country = data.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
 <tr>
@@ -890,76 +234,7 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary SP20_Jackson" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/705-53470-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
 
-</script> -->
   <script> 
     $(document).ready(function(){
         console.log("working")
@@ -984,7 +259,7 @@ function changeUrlBasedOnCountry() {
                 
                     $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                     $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
+                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                      $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                      $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                     
@@ -995,7 +270,7 @@ function changeUrlBasedOnCountry() {
 
                     $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
 
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
+                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/705-53470-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
 
                     $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
 
@@ -1008,11 +283,23 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/1553-53471-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
 
                  $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
 
                   $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
+                  
+                  break;
+                case "IE":
+                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/5282-53468-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229543&kwid=902099&mtid=824&kw=lg")
+
+                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/5282-53468-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229543&kwid=902099&mtid=824&kw=lg")
+
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/5282-53468-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229543&kwid=902099&mtid=824&kw=lg")
+
+                 $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/5282-53468-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229543&kwid=902099&mtid=824&kw=lg")
+
+                  $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/5282-53468-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229543&kwid=902099&mtid=824&kw=lg")
                     
                     
                     break;
@@ -1022,7 +309,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/706-53473-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
 
                 $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
 
@@ -1035,7 +322,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/1185-53479-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
 
                   $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
 
@@ -1048,7 +335,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/709-53476-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
 
                  $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
                 
@@ -1060,7 +347,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/724-53478-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
 
                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
                 $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
@@ -1071,7 +358,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
                     
                   $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
 
@@ -1084,7 +371,7 @@ function changeUrlBasedOnCountry() {
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229557&kwid=902099&mtid=824&kw=lg")
 
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229557&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/1346-53482-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229557&kwid=902099&mtid=824&kw=lg")
 
                 $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229557&kwid=902099&mtid=824&kw=lg")
 
@@ -1102,6 +389,19 @@ function changeUrlBasedOnCountry() {
                 $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/5222-53480-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229536&kwid=902099&mtid=824&kw=lg")
 
                 $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/5222-53480-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229536&kwid=902099&mtid=824&kw=lg")
+                
+                 break;
+                case "AT":
+                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/5221-53469-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229473&kwid=902099&mtid=824&kw=lg")
+
+                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/5221-53469-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229473&kwid=902099&mtid=824&kw=lg")
+
+
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/5221-53469-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229473&kwid=902099&mtid=824&kw=lg")
+
+                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/5221-53469-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229473&kwid=902099&mtid=824&kw=lg")
+
+                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/5221-53469-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229473&kwid=902099&mtid=824&kw=lg")
 
                 break;
                 
@@ -1110,7 +410,7 @@ function changeUrlBasedOnCountry() {
 
                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
 
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
+                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/707-53477-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
 
                 $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
 
@@ -1123,89 +423,13 @@ function changeUrlBasedOnCountry() {
         
                     $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                     $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
+                     $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                      $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
                      $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
               }
             }
           })
         }
-
-
-// function changeUrlBasedOnCountry() {
-//     $.ajax({
-//         url: 'https://localhost:3000/getCountry',
-//         success: function(data) {
-//           console.log(data)
-//             var parsed = JSON.parse(data)
-//             console.log("thisOne!!!!", parsed.country)
-//             var country = parsed.country
-//             switch (country) {
-//                 //Done for US
-//                 case "US":
-//                     // console.log(true)
-//                     // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-//                     $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-//                     $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-//                      $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-//                      $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-//                      $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    
-//                     console.log("here")
-                    
-//                     break;
-//                 case "AU":
-//                     $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-//                     $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "BE":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-//                 $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "CA":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "ES":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "FR":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "IT":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-//                 case "GB":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-                
-//                 case "DE":
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-//                     break;
-           
-//                 default:
-//                 $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-//                 console.log('default ')
-//             }
-//         }
-//     })
-// }
 
 </script>
   
@@ -1276,80 +500,7 @@ function changeUrlBasedOnCountry() {
     <td class="miner-price">$139.99</td>
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S5" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
-</tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S5').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s5&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
+</tr>  
   
 <tr>
 
@@ -1373,78 +524,6 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S7" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
   
   
 <tr>
@@ -1469,80 +548,7 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S9" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
-  
+ 
 <tr>
 
     <!-- ebay image link -->
@@ -1565,108 +571,6 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary avalon6" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon+bitcoin+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
 <tr>
@@ -1691,79 +595,6 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary SP20_Jackson" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/705-53470-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.SP20_Jackson').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=sp20+jackson+bitcoin&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
   
   
   
@@ -1822,80 +653,6 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_R4" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_R4').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+r4&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
-  
   
   
 <tr>
@@ -1919,80 +676,7 @@ function changeUrlBasedOnCountry() {
     <td class="miner-price">$489.99</td>
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S7" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
-</tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S7').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
-
-</script> -->
-  
-  
-  
+</tr>  
   
 <tr>
 
@@ -2016,79 +700,7 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary Antminer_S9" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/707-53477-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.Antminer_S9').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s9&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
 
-</script> -->
-  
-  
-  
   
 <tr>
 
@@ -2112,113 +724,7 @@ function changeUrlBasedOnCountry() {
     
     <td class="miner-buy"><a target="_blank" class="btn btn-primary avalon6" rel="nofollow" type="button"><i class="fa fa-shopping-cart "></i></a></td>
 </tr>
-<!-- 
-<script>
-function changeUrlBasedOnCountry() {
-    $.ajax({
-        url: "https://damp-peak-83586.herokuapp.com/getCountry",
-        success: function(data) {
-            var parsed = JSON.parse(data)
-            console.log("thisOne!!!!", parsed.country)
-            var country = parsed.country
-            switch (country) {
-                //Done for US
-                case "US":
-                    // console.log(true)
-                    // $('.antminers7').attr("href" , "http://rover.ebay.com/rover/1/" + unitedStatesCountryCode + "/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=antminer+s7&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep&kwid=902099&mtid=824&kw=lg")
-              
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                    console.log("here")
-                    
-                    break;
-                case "AU":
-                    $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229515&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "BE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229522&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "CA":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229529&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "ES":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229501&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "FR":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "IT":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229494&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                case "GB":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon+bitcoin+miner&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229508&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-                
-                case "DE":
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337910375&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229487&kwid=902099&mtid=824&kw=lg")
-                    
-                    
-                    break;
-           
-                default:
-                $('.avalon6').attr("href", "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574973039&toolid=10001&campid=5337804714&customid=&icep_uq=avalon6&icep_sellerId=&icep_ex_kw=&icep_sortBy=12&icep_catId=&icep_minPrice=&icep_maxPrice=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg")
-                console.log('default ')
-            }
-        }
-    })
-}
 
-</script> -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 </table>
 
